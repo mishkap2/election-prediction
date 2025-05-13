@@ -1,0 +1,26 @@
+PoC Results
+Processed 175 articles
+Features: ['Narendra Modi', 'BJP', 'Rahul Gandhi', 'Congress', 'sentiment']
+Article-Level Classification:
+Accuracy: 0.8000
+Classification Report:
+              precision    recall  f1-score   support
+
+    Congress       0.50      0.14      0.22         7
+         BJP       0.82      0.96      0.89        28
+
+    accuracy                           0.80        35
+   macro avg       0.66      0.55      0.55        35
+weighted avg       0.75      0.80      0.75        35
+
+Election Outcome Prediction:
+BJP Sentiment Score: -0.5102
+Congress Sentiment Score: -0.6667
+Predicted Winner: BJP
+Entity Sentiment Details:
+Narendra Modi: Avg Sentiment=-0.7521, Positive=13, Negative=101, Total Mentions=117
+BJP: Avg Sentiment=-0.2683, Positive=14, Negative=25, Total Mentions=41
+Rahul Gandhi: Avg Sentiment=-0.3333, Positive=1, Negative=2, Total Mentions=3
+Congress: Avg Sentiment=-1.0000, Positive=0, Negative=12, Total Mentions=12
+
+
