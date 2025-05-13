@@ -6,7 +6,7 @@
 ## Overview
 
 The Indian Election Sentiment Analysis Project aims to predict election outcomes by analyzing public sentiment toward key political entities (Narendra Modi, BJP, Rahul Gandhi, Congress) from multilingual news articles and, in future iterations, YouTube transcriptions. Unlike the plethora of English-only sentiment analysis tools, this project prioritizes India’s linguistic diversity, processing texts in English, Hindi, Bengali, Assamese, Gujarati, and Marathi. By leveraging advanced NLP models and context-aware sentiment attribution, we provide insights into voter sentiment, with a focus on scalability and real-world applicability in India’s complex media landscape.
-Our current proof-of-concept (PoC) demonstrates robust sentiment analysis on a dataset of 175 news articles, achieving an accuracy of 0.8 in classifying article-level favorability. The project is designed to scale to larger datasets (e.g., 2000 articles) and incorporate diverse data sources, such as YouTube videos, to capture spoken political discourse. The multilingual focus ensures accessibility and relevance in India’s heterogeneous linguistic environment, setting us apart from English-centric solutions.
+Our current proof-of-concept (PoC) demonstrates robust sentiment analysis on a dataset of ews articles, achieving an accuracy of 0.8 in classifying article-level favorability. The project is designed to scale to larger datasets and incorporate diverse data sources, such as YouTube videos, to capture spoken political discourse. The multilingual focus ensures accessibility and relevance in India’s heterogeneous linguistic environment, setting us apart from English-centric solutions.
 Current Achievements
 
 - Dataset Processing: Successfully preprocessed news articles from newsdata.io, covering Modi/BJP and Gandhi/Congress, with columns article_id, text, language, tokens, entities, sentiment, normalized_text.
@@ -18,10 +18,7 @@ Current Achievements
 - Context-Aware Sentiment Attribution:
   - Developed rules to assign negative sentiment correctly (e.g., BJP’s criticism of "प्रदेश सरकार" targets Congress, not BJP).
   - Handled implicit entity mentions.
-
-
-GPU Acceleration: Implemented GPU support (device=0) for NER and sentiment analysis, optimizing performance for large datasets.
-Extrapolation Demo: Scaled results to a hypothetical 2000-article dataset, maintaining ~0.8 accuracy and reflecting BJP’s sentiment lead in a wartime scenario.
+- GPU Acceleration: Implemented GPU support (device=0) for NER and sentiment analysis, optimizing performance for large datasets.
 
 ## What We Have Implemented
 
@@ -89,11 +86,6 @@ Gap: Existing English sentiment tools fail to capture India’s linguistic diver
 
 
 # Future Plans
-
-**Dataset Expansion:**
-- Scale to 2000+ news articles, incorporating diverse sources (e.g., regional newspapers).
-- Integrate YouTube transcriptions from political speeches, debates, and news clips, preprocessing them into the same format (article_id as index, text, etc.).
-
 
 **YouTube Integration:**
 - Develop a transcription preprocessing pipeline using youtube-transcript-api or YouTube Data API.
